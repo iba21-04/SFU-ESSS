@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="title desc">
+  <title id="title">ESSS logo</title>
+  <desc id="desc">White circular ESSS mark with three angled bars on a deep blue background</desc>
+  <rect width="400" height="400" fill="#1b2d63" />
+  <circle cx="200" cy="200" r="166" fill="none" stroke="#fff" stroke-width="16" />
+  <path fill="#fff" d="M105 133 L238 78 L260 126 L127 181 Z M142 202 L229 166 L251 214 L164 250 Z M176 278 L305 225 L327 274 L198 327 Z" />
+</svg>

@@ -162,6 +162,18 @@ header {
   background-size: auto, 300px 300px, 300px 300px, 300px 300px, 300px 300px, 300px 300px, 300px 300px, 300px 300px, 300px 300px;
   background-position: center;
 
+  & > hgroup > .hero-logo {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    z-index: 2;
+    width: clamp(3.5rem, 9vw, 5.5rem);
+    height: auto;
+    margin: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px var(--c-accent), 8px 8px 0 var(--c-strong);
+  }
+
   & > hgroup {
     text-align: center;
 
@@ -488,8 +500,80 @@ main {
 .section-container > p {
   color: var(--c-secondary);
 }
+.week-overview {
+  width: min(100%, 72rem);
+}
+
+.week-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.75rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.week-day {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-height: 8rem;
+  justify-content: center;
+  padding: 0.85rem 0.65rem;
+  border: 2px solid var(--c-strong);
+  background: rgba(27, 31, 75, 0.8);
+  color: var(--c-secondary);
+  font-size: 0.85rem;
+}
+
+.week-day strong {
+  color: var(--c-accent);
+  font-family: var(--f-subheading);
+  font-size: 0.95rem;
+}
+
+.week-day-label {
+  color: var(--c-tertiary);
+  font-family: var(--f-subheading);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.week-day-featured {
+  border-color: var(--c-accent);
+  box-shadow: 4px 4px 0 var(--c-accent);
+}
+
+.overview-note {
+  margin-top: 1rem;
+}
+
+.faq-discord-note {
+  max-width: 42rem;
+  margin: 0 auto 1rem;
+  color: var(--c-secondary);
+  text-align: center;
+}
+
+.faq-discord-note a {
+  color: var(--c-accent);
+  text-decoration: underline;
+}
 #mm-hero .section-content > p {
   color: var(--c-secondary);
+}
+#mm-hero {
+  position: relative;
+}
+
+.mm-corner-logo {
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  z-index: 1;
+  width: clamp(3.5rem, 9vw, 5.5rem);
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px var(--c-accent), 5px 5px 0 var(--c-strong);
 }
 #about .section-container h2::before { content: '01 // MISSION OVERVIEW'; }
 .section-container h2.crew-heading::before { content: '02 // FLIGHT CREW'; }
@@ -677,6 +761,13 @@ main {
   text-transform: uppercase;
 }
 
+.mm-hosted-by {
+  color: var(--c-accent);
+  font-family: var(--f-subheading);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  text-align: center;
+}
+
 .mm-table-wrap {
   width: 100%;
   overflow-x: auto;
@@ -720,6 +811,14 @@ main {
 }
 
 @media (max-width: 640px) {
+  .week-overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .week-day {
+    min-height: auto;
+  }
+
   .mm-event-details {
     grid-template-columns: 1fr;
   }

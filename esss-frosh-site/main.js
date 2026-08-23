@@ -146,6 +146,7 @@ function handleHeaderChanges() {
 function setCountdown() {
   const target = new Date('2026-09-14T10:30:00.000-07:00').getTime();
   const countdown = document.getElementById('countdown');
+  if (!countdown) return;
 
   if (target < new Date().getTime()) {
     countdown.style.display = 'none';
