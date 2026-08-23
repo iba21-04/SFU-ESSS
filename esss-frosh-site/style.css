@@ -74,7 +74,9 @@ h3 {
 }
 
 .button-madness {
-  font-size: clamp(0.7rem, 4vw, 1rem);
+  width: clamp(12rem, 32vw, 15rem);
+  white-space: nowrap;
+  font-size: clamp(0.8rem, 3.5vw, 1.25rem);
 }
 
 .hero-nav .button {
