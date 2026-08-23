@@ -73,6 +73,16 @@ h3 {
   width: clamp(10rem, 30vw, 14rem);
 }
 
+.button-madness {
+  font-size: clamp(0.7rem, 4vw, 1rem);
+}
+
+.hero-nav .button {
+  height: clamp(3rem, 8vw, 3.5rem);
+  aspect-ratio: auto;
+  box-sizing: border-box;
+}
+
 .icon {
   width: 1.5em;
   height: 1.5em;
