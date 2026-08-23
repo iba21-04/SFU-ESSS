@@ -643,6 +643,19 @@ main {
   display: block;
 }
 
+.mm-hype-featured {
+  grid-column: 1 / -1;
+  aspect-ratio: 2 / 1;
+}
+
+.mm-hype-gallery .photo-grid {
+  max-width: 68rem;
+}
+
+.mm-two-photo-gallery .photo-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .faq-accordion {
   display: flex;
   flex-direction: column;
