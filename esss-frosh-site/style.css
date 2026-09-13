@@ -52,6 +52,43 @@ h3 {
   border: solid 2px var(--c-strong);
 }
 
+.event-rule-block {
+  width: min(100%, 64rem);
+  margin: 1.25rem auto 0;
+  padding: 1.25rem 1.5rem 0.75rem;
+  border: 1px solid rgba(242, 177, 52, 0.8);
+  border-radius: 14px;
+  background: rgba(27, 31, 75, 0.6);
+  color: var(--c-secondary);
+  text-align: left;
+}
+
+.event-rule-block h5 {
+  margin: 0.4rem 0 0.85rem;
+  font-size: clamp(0.95rem, 1.8vw, 1.2rem);
+  font-family: var(--f-subheading);
+  color: var(--c-secondary);
+  letter-spacing: 0.04em;
+}
+
+.event-rule-block ul {
+  margin: 0 0 1.2rem;
+  padding-left: 1.5rem;
+  color: var(--c-tertiary);
+}
+
+.event-rule-block li {
+  margin-bottom: 0.7rem;
+  color: var(--c-tertiary);
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: var(--f-main);
+}
+
+.event-rule-block strong {
+  color: var(--c-accent);
+}
+
 .button {
   width: clamp(8rem, 22vw, 10rem);
   aspect-ratio: 6 / 1;
@@ -747,6 +784,12 @@ main {
       margin: 1rem 0;
     }
   }
+
+  & > .wednesday-event,
+  & > .thursday-event {
+    width: min(100%, 72rem);
+    max-width: 72rem;
+  }
 }
 
 .mm-event-details {
@@ -925,6 +968,11 @@ footer {
     & > .bg-box {
       width: 100%;
       flex: 1 1 45%;
+    }
+
+    & > .wednesday-event,
+    & > .thursday-event {
+      flex: 1 1 100%;
     }
   }
 
