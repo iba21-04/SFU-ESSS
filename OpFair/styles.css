@@ -83,6 +83,9 @@ a { color: inherit; }
 .logo-tile { display: flex; align-items: center; justify-content: center; min-height: 84px; padding: 12px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.12); border-radius: var(--radius); font-family: "Poppins", sans-serif; font-weight: 600; font-size: 1.3rem; letter-spacing: .02em; color: #a8b3d6; transition: background .2s, transform .2s; }
 .logo-tile:hover { background: rgba(255,255,255,.14); transform: translateY(-2px); }
 .logo-tile img { max-height: 56px; width: auto; }
+.logo-tile--image { background: #fff; }
+.logo-tile--image:hover { background: #fff; }
+.logo-tile--image img { max-width: 100%; object-fit: contain; }
 .logo-grid--lg .logo-tile { min-height: 112px; font-size: 1.6rem; }
 
 /* ---------- Impact ---------- */
