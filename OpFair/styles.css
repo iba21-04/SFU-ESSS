@@ -98,7 +98,7 @@ a { color: inherit; }
 .stat span { font-family: "Poppins", sans-serif; font-weight: 600; font-size: 1.1rem; color: var(--navy); }
 
 /* ---------- ESSS ---------- */
-.esss { display: grid; grid-template-columns: 120px 1fr; gap: 32px; align-items: center; }
+.esss { display: grid; grid-template-columns: 152px minmax(0, 1fr); gap: 32px; align-items: center; }
 .esss__logo-card { display: grid; width: 152px; height: 152px; place-items: center; padding: 16px; border-radius: var(--radius); background: var(--navy-deep); }
 .esss__logo { width: 120px; height: 120px; object-fit: contain; }
 
