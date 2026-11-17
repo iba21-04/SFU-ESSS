@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,400;0,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -58,7 +59,7 @@
       <div class="container">
         <h2 class="heading-italic heading-italic--rule"><span>Sponsors</span><i></i></h2>
         <div class="logo-grid">
-          <div class="logo-tile logo-tile--image"><img src="assets/logo_osensa_green.svg" alt="Osensa"></div>
+          <div class="logo-tile logo-tile--image"><img src="assets/logo_osensa_green.svg" alt="Osensa Innovations"></div>
           <div class="logo-tile logo-tile--image"><img src="assets/solidigm.png" alt="Solidigm"></div>
           <div class="logo-tile logo-tile--image"><img src="assets/spartan.png" alt="Spartan Controls"></div>
           <div class="logo-tile logo-tile--image"><img src="assets/Fortinet-logo-rgb-black.webp" alt="Fortinet"></div>
@@ -106,7 +107,9 @@
     <!-- ESSS -->
     <section id="esss" class="section section--light">
       <div class="container esss">
-        <img src="https://static.wixstatic.com/media/f9b959_0935a9309cc84152acf1913a13cf10c0~mv2.png" alt="ESSS logo" class="esss__logo">
+        <div class="esss__logo-card">
+          <img src="https://static.wixstatic.com/media/f9b959_0935a9309cc84152acf1913a13cf10c0~mv2.png" alt="ESSS logo" class="esss__logo">
+        </div>
         <div>
           <h2 class="heading-italic">Hosted by the Engineering Science Student Society</h2>
           <p>The Engineering Science Student Society (ESSS) is established to serve and represent the interests of its members to the School of Engineering Science, throughout Simon Fraser University, and beyond to industry and other engineering societies.</p>
@@ -119,12 +122,12 @@
     <section id="schedule" class="section section--dark">
       <div class="container">
         <h2 class="heading-italic heading-italic--rule"><span>Schedule</span><i></i></h2>
-        <p class="muted">January 27 · Applied Sciences Building · <em>times below are placeholders until the final schedule is confirmed</em></p>
+        <p class="muted">January 27 · Applied Sciences Building · <em>other schedule times are placeholders until confirmed</em></p>
         <ol class="timeline">
           <li><time>9:00 AM</time><div><h3>Doors open</h3><p>Check-in and exhibitor floor opens.</p></div></li>
           <li><time>10:00 AM</time><div><h3>Opening remarks</h3><p>Welcome from ESSS and sponsors.</p></div></li>
           <li><time>12:00 PM</time><div><h3>Networking break</h3><p>Lunch and open networking.</p></div></li>
-          <li><time>2:00 PM</time><div><h3>Industry panel</h3><p>Topic and speakers to be announced.</p></div></li>
+          <li><time>1:30–2:20 PM</time><div><h3>Osensa Innovations information session</h3><p>Join Osensa Innovations for a company information session.</p></div></li>
           <li><time>4:30 PM</time><div><h3>Closing</h3><p>Fair wraps up.</p></div></li>
         </ol>
       </div>
@@ -150,9 +153,8 @@
       <div class="container">
         <h2 class="heading-italic heading-italic--right heading-italic--rule"><i></i><span>Our Team</span></h2>
         <div class="team">
-          <!-- Duplicate this card for each team member. Replace .team__photo with <img>. -->
           <article class="card">
-            <div class="card__photo" role="img" aria-label="Photo placeholder"></div>
+            <div class="card__photo"><img src="assets/team/angus-gardner.jpg" alt="Angus Gardner"></div>
             <div class="card__body">
               <h3>Angus Gardner</h3>
               <p class="card__role">Director of OpFair</p>
@@ -160,7 +162,7 @@
             </div>
           </article>
           <article class="card">
-            <div class="card__photo" role="img" aria-label="Photo placeholder"></div>
+            <div class="card__photo"><img src="assets/team/jihee-ryu.jpg" alt="Jihee Ryu"></div>
             <div class="card__body">
               <h3>Jihee Ryu</h3>
               <p class="card__role">VP External</p>
@@ -168,11 +170,19 @@
             </div>
           </article>
           <article class="card">
-            <div class="card__photo" role="img" aria-label="Photo placeholder"></div>
+            <div class="card__photo"><img src="assets/team/michael-hu.png" alt="Michael Hu"></div>
             <div class="card__body">
               <h3>Michael Hu</h3>
               <p class="card__role">Volunteer Coordinator</p>
               <p>Hi, my name is Michael Hu, and I am currently a second year ENSC student at the Burnaby campus with plans to concentrate in Electronics Engineering. I am passionate about electronics and circuit design, with a particular interest in hands-on work and prototyping. When I'm not occupied with school, I enjoy spending time on hobbies such as photography and hiking.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__photo"><img src="assets/team/jeremy-wu.png" alt="Jeremy Wu"></div>
+            <div class="card__body">
+              <h3>Jeremy Wu</h3>
+              <p class="card__role">Logistics</p>
+              <p>Hi I'm a second year engineering physics student. Outside of class I enjoy going to see shows and hanging out with my friends. I am super excited to support OpFair as the logistic lead!</p>
             </div>
           </article>
         </div>
@@ -186,9 +196,9 @@
           <h2 class="heading-italic">Get involved</h2>
           <p>Want to volunteer, exhibit, or ask us something? Send us a note and the team will get back to you.</p>
           <ul class="socials">
-            <li><a href="https://discord.gg/DmgE8EECaT" target="_blank" rel="noopener">Discord</a></li>
-            <li><a href="https://www.instagram.com/sfuengineers/" target="_blank" rel="noopener">Instagram</a></li>
-            <li><a href="https://ca.linkedin.com/company/sfu-engineering-science-student-society" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://discord.gg/DmgE8EECaT" target="_blank" rel="noopener" aria-label="Discord"><i class="fa-brands fa-discord" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/sfuengineers/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/sfuopfair/about/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
           </ul>
         </div>
 

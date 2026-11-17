@@ -13,8 +13,8 @@ then open http://localhost:8000
 
 ## Things to fill in
 - Sponsors: put logos in `assets/sponsors/` (e.g. `osensa.svg`) and replace the `COMPANY` tiles.
-- Schedule: times in `#schedule` are placeholders.
-- Team: duplicate the `.card` block; swap `.card__photo` for an `<img>`.
+- Schedule: the Osensa Innovations information session is confirmed for 1:30–2:20 PM; other times in `#schedule` are placeholders.
+- Team: portraits are stored in `assets/team/`; duplicate a `.card` block when adding team members.
 - Impact/About copy: replace placeholder history text.
 - Gallery & logos currently hotlink Wix CDN images; download them to `assets/` before cancelling Wix.
 - Map uses a keyless Google Maps embed. To use the JS API instead, you need an API key.
