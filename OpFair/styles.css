@@ -87,6 +87,8 @@ a { color: inherit; }
 .logo-tile--image { background: #fff; }
 .logo-tile--image:hover { background: #fff; }
 .logo-tile--image img { max-width: 100%; object-fit: contain; }
+.logo-tile--viewsml { grid-column: 1 / -1; justify-self: center; width: min(100%, 300px); background: #111; }
+.logo-tile--viewsml:hover { background: #111; }
 .logo-grid--lg .logo-tile { min-height: 112px; font-size: 1.6rem; }
 
 /* ---------- Impact ---------- */
@@ -160,6 +162,7 @@ a { color: inherit; }
   .hero__card { max-width: 380px; }
   .contact { grid-template-columns: 1fr; gap: 32px; }
   .logo-grid { grid-template-columns: repeat(2, 1fr); }
+  .logo-tile--viewsml { grid-column: 1 / -1; }
 }
 @media (max-width: 640px) {
   .section { padding: 48px 0; }
