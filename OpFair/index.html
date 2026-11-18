@@ -29,7 +29,7 @@
       </div>
       <nav class="nav__links" aria-label="Main">
         <a href="#about">About</a>
-        <a href="#sponsors">Sponsors</a>
+        <a href="#exhibitors">Exhibitors</a>
         <a href="#schedule">Schedule</a>
       </nav>
       <div class="nav__actions">
@@ -54,12 +54,14 @@
       </div>
     </section>
 
-    <!-- SPONSORS (dark band) -->
-    <section id="sponsors" class="section section--dark">
+    <!-- EXHIBITORS (dark band) -->
+    <section id="exhibitors" class="section section--dark section--exhibitors">
       <div class="container">
-        <h2 class="heading-italic heading-italic--rule"><span>Sponsors</span><i></i></h2>
+        <h2 class="heading-italic heading-italic--rule"><span>Exhibitors</span><i></i></h2>
+        <div class="sponsor-feature">
+          <div class="logo-tile logo-tile--image sponsor-feature__logo"><img src="assets/logo_osensa_green.svg" alt="Osensa Innovations"></div>
+        </div>
         <div class="logo-grid">
-          <div class="logo-tile logo-tile--image"><img src="assets/logo_osensa_green.svg" alt="Osensa Innovations"></div>
           <div class="logo-tile logo-tile--image"><img src="assets/solidigm.png" alt="Solidigm"></div>
           <div class="logo-tile logo-tile--image"><img src="assets/spartan.png" alt="Spartan Controls"></div>
           <div class="logo-tile logo-tile--image"><img src="assets/Fortinet-logo-rgb-black.webp" alt="Fortinet"></div>
@@ -97,10 +99,21 @@
     <section id="about" class="section section--light section--alt">
       <div class="container">
         <h2 class="bar"><span>What We Do</span><i></i></h2>
-        <div class="prose">
-          <p>Opportunity Fair has been bridging the gap between Metro Vancouver's technology industry and SFU's passionate engineering students since 1993, fostering professional connections between developers of today and tomorrow.</p>
-          <p>Over the years, we have linked 500+ students with 100+ companies. OpFair is hosted annually at Simon Fraser University's Burnaby Campus.</p>
-          <p><a class="link" href="https://www.linkedin.com/company/sfuopfair/about/" target="_blank" rel="noopener">Follow OpFair on LinkedIn →</a></p>
+        <div class="about__content">
+          <div class="prose">
+            <p>Opportunity Fair has been bridging the gap between Metro Vancouver's technology industry and SFU's passionate engineering students since 1993, fostering professional connections between developers of today and tomorrow.</p>
+            <p>Over the years, we have linked 500+ students with 100+ companies. OpFair is hosted annually at Simon Fraser University's Burnaby Campus.</p>
+            <p><a class="link" href="https://www.linkedin.com/company/sfuopfair/about/" target="_blank" rel="noopener">Follow OpFair on LinkedIn →</a> <a class="inline-social-icon" href="https://www.linkedin.com/company/sfuopfair/about/" target="_blank" rel="noopener" aria-label="OpFair on LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></p>
+          </div>
+          <aside class="about__socials" aria-label="OpFair social media">
+            <h3>Connect with us</h3>
+            <ul class="socials">
+              <li><a href="https://www.linkedin.com/company/sfuopfair/about/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a href="https://discord.gg/DmgE8EECaT" target="_blank" rel="noopener" aria-label="Discord"><i class="fa-brands fa-discord" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.instagram.com/sfuengineers/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+            <a class="btn btn--blue" href="#contact">Get in touch</a>
+          </aside>
         </div>
       </div>
     </section>
@@ -155,7 +168,7 @@
         <h2 class="heading-italic heading-italic--right heading-italic--rule"><i></i><span>Our Team</span></h2>
         <div class="team">
           <article class="card">
-            <div class="card__photo"><img src="assets/team/angus-gardner.jpg" alt="Angus Gardner"></div>
+            <div class="card__photo"><img src="assets/team/michael-hu.png" alt="Angus Gardner"></div>
             <div class="card__body">
               <h3>Angus Gardner</h3>
               <p class="card__role">Director of OpFair</p>
@@ -171,7 +184,7 @@
             </div>
           </article>
           <article class="card">
-            <div class="card__photo"><img src="assets/team/michael-hu.png" alt="Michael Hu"></div>
+            <div class="card__photo"><img src="assets/team/angus-gardner.jpg" alt="Michael Hu"></div>
             <div class="card__body">
               <h3>Michael Hu</h3>
               <p class="card__role">Volunteer Coordinator</p>
@@ -243,7 +256,17 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div><strong>SFU OpFair</strong><br>Applied Sciences Building<br>8888 University Dr, Burnaby BC</div>
-      <div>Hosted by <a href="https://www.esss.ca/" target="_blank" rel="noopener">ESSS</a></div>
+      <div class="footer__brands" aria-label="SFU, OpFair, and ESSS logos">
+        <a href="https://www.sfu.ca/" target="_blank" rel="noopener" aria-label="Simon Fraser University">
+          <img src="assets/sfu-horizontal-logo.svg" alt="Simon Fraser University">
+        </a>
+        <a href="#top" aria-label="OpFair home">
+          <img src="https://static.wixstatic.com/media/f9b959_44950370ad6b41eb8a19b0b3277ac8fe~mv2.png" alt="OpFair">
+        </a>
+        <a href="https://www.esss.ca/" target="_blank" rel="noopener" aria-label="ESSS website">
+          <img src="https://static.wixstatic.com/media/f9b959_0935a9309cc84152acf1913a13cf10c0~mv2.png" alt="ESSS">
+        </a>
+      </div>
     </div>
   </footer>
 
